@@ -7,4 +7,20 @@ import Shower from "./645900c4c19e76cf54cd7a46_shower.svg";
 import Size from "./645900c400413f45b43620cb_size.svg";
 import Plus from "./6458f91bc9526d6a3cdcbc22_plus.svg";
 import WhiteLogo from "./644fcc5d198ee4989c3a9122_logo-white.svg";
-export { Logo, Star, ArrowRight, Play, Bed, Shower, Size, Plus, WhiteLogo };
+import Facebook from "./644bd4412d68a9e0c5fd38a6_Facebook.svg";
+import Twitter from "./644bd4412d68a91f1afd38a9_Twitter.svg";
+import Instagram from "./644bd4412d68a96b31fd38a7_Instagram.svg";
+export {
+  Logo,
+  Star,
+  ArrowRight,
+  Play,
+  Bed,
+  Shower,
+  Size,
+  Plus,
+  WhiteLogo,
+  Facebook,
+  Twitter,
+  Instagram,
+};

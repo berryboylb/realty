@@ -14,7 +14,17 @@ import Post2 from "./645bae2cda50f50faac09640_post 02.jpg"
 import Post3 from "./645bae3d7b4a0bc0677b1444_post 03.jpg";
 import Post4 from "./645bae53060be1b9dc8c66fc_post 04.jpg";
 import Space from "./space.jpg";
-
+import AboutMain from "./main.jpg";
+import AboutMini from "./mini.jpg"
+import EdgeLeft from "./edgeleft.jpg"
+import EdgeRight from "./edgeright.jpg"
+import Mini2 from "./mini2.jpg"
+import Mini3 from "./mini3.jpg"
+import Lamp from "./lamp.jpg"
+import Emilia from "./emilia.jpg"
+import Micheal from "./micheal.jpg"
+import William from "./william.jpg";
+import Lee from "./lee.jpg";
 export {
   Condo,
   BedJPG,
@@ -30,6 +40,17 @@ export {
   Post1,
   Post2,
   Post3,
-    Post4,
-  Space
+  Post4,
+  Space,
+  AboutMain,
+  AboutMini,
+  EdgeLeft,
+  EdgeRight,
+  Mini2,
+  Mini3,
+  Lamp,
+  Emilia,
+  Micheal,
+  William,
+  Lee,
 };

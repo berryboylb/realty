@@ -12,6 +12,10 @@ import {
   Post2,
   Post3,
   Post4,
+   Emilia,
+  Micheal,
+  William,
+  Lee,
 } from "@/assets";
 
 export const Links = [
@@ -230,5 +234,40 @@ export const FooterLink = [
       name: "LinkedIn",
       link: "/blog",
     },
+  },
+];
+
+export const team = [
+  {
+    image: Emilia,
+    name: "Emily Rodriguez",
+    position: "Sales Manager",
+    instagramLink: "https://instagram.com",
+    twitterLink: "https://twitter.com",
+    facebookLink: "https://facebook.com",
+  },
+  {
+    image: Micheal,
+    name: "Michael Johnson",
+    position: "CEO",
+    instagramLink: "https://instagram.com",
+    twitterLink: "https://twitter.com",
+    facebookLink: "https://facebook.com",
+  },
+  {
+    image: William,
+    name: "William Brown",
+    position: "Senior Real Estate Agent",
+    instagramLink: "https://instagram.com",
+    twitterLink: "https://twitter.com",
+    facebookLink: "https://facebook.com",
+  },
+  {
+    image: Lee,
+    name: "Samantha Lee",
+    position: "Administrative Assistant",
+    instagramLink: "https://instagram.com",
+    twitterLink: "https://twitter.com",
+    facebookLink: "https://facebook.com",
   },
 ];
