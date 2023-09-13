@@ -1,3 +1,5 @@
+import { Dreams } from "@/components/blog";
+import { BlogHeader } from "@/components/blog-header";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -6,5 +8,8 @@ export const metadata: Metadata = {
 };
 
 export default function LoginPage() {
-  return <div className="container">Blog</div>;
+  return <div className="container">
+    <BlogHeader/>
+    <Dreams/>
+  </div>;
 }

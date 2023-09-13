@@ -12,10 +12,13 @@ import {
   Post2,
   Post3,
   Post4,
-   Emilia,
+  Emilia,
   Micheal,
   William,
   Lee,
+  Office,
+  Phone,
+  Chat,
 } from "@/assets";
 
 export const Links = [
@@ -56,7 +59,7 @@ export const NavLinks = [
   },
   {
     name: "Properties",
-    link: "/careers",
+    link: "/properties",
   },
   {
     name: "Blog",
@@ -270,4 +273,20 @@ export const team = [
     twitterLink: "https://twitter.com",
     facebookLink: "https://facebook.com",
   },
+];
+
+export const contact = [
+  { img: Chat, name: "Email", val: "info@example.com" },
+  { img: Phone, name: "Phone", val: "+12 345 678 9900" },
+  { img: Office, name: "Office", val: "1234 Harrison Avenue, New York NY" },
+];
+
+export const tags = [
+  "home tours",
+  "living room",
+  "furniture",
+  "kitchen",
+  "home upgrades",
+  "real estates",
+  "home decor",
 ];

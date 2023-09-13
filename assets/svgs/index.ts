@@ -10,6 +10,10 @@ import WhiteLogo from "./644fcc5d198ee4989c3a9122_logo-white.svg";
 import Facebook from "./644bd4412d68a9e0c5fd38a6_Facebook.svg";
 import Twitter from "./644bd4412d68a91f1afd38a9_Twitter.svg";
 import Instagram from "./644bd4412d68a96b31fd38a7_Instagram.svg";
+import Office from "./6460d012215f1e351365b5ba_map-pin.svg";
+import Phone from "./6460d01229e31e8a4095fa7a_phone.svg";
+import Chat from "./6460d01246818cacc5ed6a7d_message-square.svg";
+import Cheveron from "./6460aae23cd46f90282c990a_chevron-right-dark.svg";
 export {
   Logo,
   Star,
@@ -23,4 +27,8 @@ export {
   Facebook,
   Twitter,
   Instagram,
+  Office,
+  Phone,
+  Chat,
+  Cheveron,
 };
