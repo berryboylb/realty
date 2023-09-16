@@ -154,7 +154,11 @@ export function PropertiesHeader() {
         )}
         <div className="lg:col-span-6  grid gap-[1rem] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-prefferredBlack ">
           {properties.map((item, i) => (
-            <div key={i} className="overflow-hidden ">
+            <Link
+              key={i}
+              className="overflow-hidden  block"
+              href={`/properties/${item.name}`}
+            >
               <div className="overflow-hidden p-5 rounded-[30px] bg-propBg h-[250px] lg:h-[250px] relative group transition duration-500">
                 <h4 className="text-base font-semibold">${item.amount}</h4>
                 <p className="mt-2 text-sm text-propColor">{item.address}</p>
@@ -234,7 +238,7 @@ export function PropertiesHeader() {
                   {item.space}
                 </h5>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

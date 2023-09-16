@@ -14,6 +14,7 @@ import Office from "./6460d012215f1e351365b5ba_map-pin.svg";
 import Phone from "./6460d01229e31e8a4095fa7a_phone.svg";
 import Chat from "./6460d01246818cacc5ed6a7d_message-square.svg";
 import Cheveron from "./6460aae23cd46f90282c990a_chevron-right-dark.svg";
+import Gala from "./6460c1896a5c7615fc05af7c_image.svg"
 export {
   Logo,
   Star,
@@ -31,4 +32,5 @@ export {
   Phone,
   Chat,
   Cheveron,
+  Gala,
 };

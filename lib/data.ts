@@ -96,6 +96,16 @@ export const properties = [
     bathrooms: 2,
     image: Property1,
     space: 2200,
+    description:
+      "Located in the heart of Manhattan, this luxury condo features 3 bedrooms, 2 bathrooms, and 2,200 sqft of living space. With floor-to-ceiling windows, the apartment is filled with natural light and offers breathtaking views of the city skyline. The open-concept living and dining area is perfect for entertaining, while the gourmet kitchen features top-of-the-line appliances and a large island. The spacious master suite boasts a luxurious marble bathroom and a walk-in closet. Building amenities include a fitness center, spa, and 24-hour concierge service.",
+    otherImages: [
+      Property2,
+      Property3,
+      Property4,
+      Property2,
+      Property3,
+      Property4,
+    ],
   },
   {
     name: "Mountain Retreat",
@@ -105,6 +115,16 @@ export const properties = [
     bathrooms: 2,
     image: Property2,
     space: 2200,
+    description:
+      "Located in the heart of Manhattan, this luxury condo features 3 bedrooms, 2 bathrooms, and 2,200 sqft of living space. With floor-to-ceiling windows, the apartment is filled with natural light and offers breathtaking views of the city skyline. The open-concept living and dining area is perfect for entertaining, while the gourmet kitchen features top-of-the-line appliances and a large island. The spacious master suite boasts a luxurious marble bathroom and a walk-in closet. Building amenities include a fitness center, spa, and 24-hour concierge service.",
+    otherImages: [
+      Property1,
+      Property3,
+      Property4,
+      Property1,
+      Property3,
+      Property4,
+    ],
   },
   {
     name: "Downtown Penthouse",
@@ -114,6 +134,16 @@ export const properties = [
     bathrooms: 6,
     image: Property3,
     space: 6000,
+    description:
+      "Located in the heart of Manhattan, this luxury condo features 3 bedrooms, 2 bathrooms, and 2,200 sqft of living space. With floor-to-ceiling windows, the apartment is filled with natural light and offers breathtaking views of the city skyline. The open-concept living and dining area is perfect for entertaining, while the gourmet kitchen features top-of-the-line appliances and a large island. The spacious master suite boasts a luxurious marble bathroom and a walk-in closet. Building amenities include a fitness center, spa, and 24-hour concierge service.",
+    otherImages: [
+      Property1,
+      Property2,
+      Property4,
+      Property1,
+      Property2,
+      Property4,
+    ],
   },
   {
     name: "Oceanfront Estate",
@@ -123,6 +153,16 @@ export const properties = [
     bathrooms: 4,
     image: Property4,
     space: 8500,
+    description:
+      "Located in the heart of Manhattan, this luxury condo features 3 bedrooms, 2 bathrooms, and 2,200 sqft of living space. With floor-to-ceiling windows, the apartment is filled with natural light and offers breathtaking views of the city skyline. The open-concept living and dining area is perfect for entertaining, while the gourmet kitchen features top-of-the-line appliances and a large island. The spacious master suite boasts a luxurious marble bathroom and a walk-in closet. Building amenities include a fitness center, spa, and 24-hour concierge service.",
+    otherImages: [
+      Property1,
+      Property2,
+      Property3,
+      Property1,
+      Property2,
+      Property3,
+    ],
   },
 ];
 
@@ -148,6 +188,7 @@ export const blogPosts = [
     description:
       "Make your living room the perfect place to relax and entertain with our tips for creating a cozy place",
     image: Post1,
+    tags: ["Home Decor", "Living Room"],
   },
   {
     id: 2,
@@ -155,6 +196,7 @@ export const blogPosts = [
     description:
       "Brighten up any space with a bold yellow armchair and add a pop of colour to your decor with our expert advice",
     image: Post2,
+    tags: ["Home Decor", "Furniture"],
   },
   {
     id: 3,
@@ -162,6 +204,7 @@ export const blogPosts = [
     description:
       "Take a virtual tour of your modern stunning home, inisde and out and experience the slick style and innovative features for yourself",
     image: Post3,
+    tags: ["Home Tours", "Real State"],
   },
   {
     id: 4,
@@ -169,6 +212,7 @@ export const blogPosts = [
     description:
       "Transform your kitchen without breaking the bank with our easy upgrades and give your space a fresh new look.",
     image: Post4,
+    tags: ["Home Upgrades", "Kitchen"],
   },
 ];
 

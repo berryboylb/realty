@@ -30,7 +30,7 @@ export function BlogHeader() {
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[1rem] mt-10 ">
         {blogPosts.map((item, i) => (
-          <Link key={i} href={`/blog/${item.id}`} className="block ">
+          <Link key={i} href={`/blog/${item.title}`} className="block ">
             <div className="group lg:h-[250px]  w-full h-[250px] overflow-hidden rounded-[30px]">
               <Image
                 src={item.image}

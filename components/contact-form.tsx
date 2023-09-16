@@ -64,23 +64,41 @@ function Form() {
     </form>
   );
 }
-export function ContactForm() {
+export function ContactForm({
+  title = " Contact Us",
+  form = true,
+}: {
+  title?: string;
+  form?: boolean;
+}) {
   return (
     <section className="mt-[1rem]">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-[1rem]  w-full">
+      <div
+        className={` w-full  ${
+          form ? "grid grid-cols-1 lg:grid-cols-2 gap-[1rem]  " : ""
+        }`}
+      >
         <div className="w-full  bg-propBg rounded-[30px] p-[1.5rem] lg:p-[2rem] ">
-          <h1 className="text-[2rem] lg:text-[2.5rem]  font-medium mt-0  lg:mt-[1.5rem] lg:mb-[1.5rem] ">
-            Contact Us
+          <h1
+            className={` ${
+              form
+                ? "text-[2rem] lg:text-[2.5rem]  font-medium mt-0  lg:mt-[1.5rem] lg:mb-[1.5rem] "
+                : "text-center text-lg lg:text-2xl font-semibold lg:mb-[1.5rem]"
+            }`}
+          >
+            {title}
           </h1>
           <Form />
         </div>
-        <div className="w-full  h-[250px] lg:h-[37.5rem] object-cover max-w-full">
-          <Image
-            src={Space}
-            alt={Space.toString()}
-            className="w-full h-full object-cover rounded-[30px]  "
-          />
-        </div>
+        {/* {form && (
+          <div className="w-full  h-[250px] lg:h-[37.5rem] object-cover max-w-full">
+            <Image
+              src={Space}
+              alt={Space.toString()}
+              className="w-full h-full object-cover rounded-[30px]  "
+            />
+          </div>
+        )} */}
       </div>
     </section>
   );

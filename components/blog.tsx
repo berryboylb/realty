@@ -18,7 +18,7 @@ export default function Blog() {
       </div>
       <div className=" mt-[1rem] lg:mt-10 grid grid-cols-1 lg:grid-cols-6 gap-[1rem] ">
         <Link
-          href={`/blog/${blogPosts[0].id}`}
+          href={`/blog/${blogPosts[0].title}`}
           className="col-span-6 lg:col-span-3 group "
         >
           <div className="lg:h-[400px] h-[250px] overflow-hidden rounded-[30px]">
@@ -39,7 +39,7 @@ export default function Blog() {
           {blogPosts.slice(1).map((item, i) => (
             <Link
               key={i}
-              href={`/blog/${item.id}`}
+              href={`/blog/${item.title}`}
               className="col-span-6 lg:col-span-3  flex flex-wrap  mb-[1rem] group "
             >
               <div className="lg:h-[150px] lg:w-[200px] w-full h-[250px] overflow-hidden rounded-[30px]">

@@ -9,7 +9,7 @@ export function NavHeader() {
   const pathSegments = pathname.split("/").filter((segment) => segment !== "");
 
   return (
-    <div className="mt-6 flex items-center py-3 lg:px-7 ]">
+    <div className="mt-6 flex items-center py-3  ]">
       <button
         className="text-prefferredBlack cursor-pointer text-sm"
         onClick={() => router.push("/")}
@@ -25,12 +25,13 @@ export function NavHeader() {
             className="w-[14px] h-[14px] object-contain mx-3 text-white text-3xl"
             priority={true}
           />
-          <span className="text-sm text-preferredBlack capitalize font-semibold">
-            {segment}
+          <span
+            className={`text-sm text-preferredBlack capitalize ${
+              index === pathSegments.length - 1 && "font-semibold"
+            } `}
+          >
+            {segment.replace(/%20/g, " ")}
           </span>
-          {index < pathSegments.length - 1 && (
-            <span className="mx-1 text-sm text-preferredBlack"> &gt; </span>
-          )}
         </React.Fragment>
       ))}
       {/* <h3 className="text-sm text-prefferredBlack  capitalize font-semibold">
