@@ -83,7 +83,7 @@ export function Dreams() {
           <div className="flex items-start justify-start mt-10">
             {" "}
             <Link
-              className={` lg:block  text-sm  text-white font-normal bg-black py-5 px-7 rounded-[100px] lg:hover:opacity-90  hover:bg-navHover border-0  hover:navHover `}
+              className={` lg:block  text-sm  text-white font-normal bg-black py-2 px-3  lg:py-3 lg:px-5 rounded-[100px] lg:hover:opacity-90  hover:bg-navHover border-0  hover:navHover `}
               href="/contact"
             >
               Contact Us

@@ -9,7 +9,7 @@ import { useMediaQuery } from 'react-responsive';
 export default function Reviews() {
   const isMobile = useMediaQuery({ query: `(max-width: 768px)` });
   useEffect(() => {
-    if (!isMobile)
+    if (isMobile === false)
       gsap.to("#review #sticky", {
         scrollTrigger: {
           trigger: "#sticky",
@@ -21,7 +21,7 @@ export default function Reviews() {
         ease: "power4.inOut",
         position: "sticky",
         top: "0",
-        left:"0",
+        left: "0",
         // y: 200,
       });
   }, [isMobile]);

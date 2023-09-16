@@ -22,7 +22,7 @@ export default function Footer() {
       .trim(),
   });
   useEffect(() => {
-    if (!isMobile)
+    if (isMobile === false)
       gsap.from("#footer #inner", {
         scrollTrigger: {
           trigger: "#inner",
@@ -31,13 +31,14 @@ export default function Footer() {
           toggleActions: "restart complete reverse reset",
         },
         duration: 2,
+        y:-50,
         ease: "power4.inOut",
-        width: "100vw",
-        marginLeft: "-2rem",
+        // width: "100vw",
+        // marginLeft: "-2rem",
       });
   }, [isMobile]);
   return (
-    <footer id="footer" className="mt-[5rem] container">
+    <footer id="footer" className="mt-[5rem] container lg:mb-[1rem]">
       <div
         id="inner"
         className=" bg-footerBg text-white rounded-[30px] p-[1rem] lg:p-[2rem] "

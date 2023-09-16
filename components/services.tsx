@@ -11,7 +11,7 @@ import { useMediaQuery } from "react-responsive";
 export default function Services() {
   const isMobile = useMediaQuery({ query: `(max-width: 768px)` });
   useEffect(() => {
-    if (!isMobile)
+    if (isMobile === false)
       gsap.to("#services #banner", {
         scrollTrigger: {
           trigger: "#banner",
@@ -23,8 +23,8 @@ export default function Services() {
         x: 0,
         duration: 2,
         ease: "power4.inOut",
-        width: "100vw",
-        marginLeft: "-2rem",
+        // width: "100vw",
+        // marginLeft: "-2rem",
       });
   }, [isMobile]);
   return (
@@ -62,7 +62,7 @@ export default function Services() {
           <div className="flex items-center justify-center mt-10">
             {" "}
             <Link
-              className={` lg:block lg:ml-5 text-sm  text-white font-normal bg-black py-5 px-7 rounded-[100px] lg:hover:opacity-90 border-0  hover:navHover `}
+              className={` lg:block lg:ml-5 text-sm  text-white font-normal bg-black py-2 px-3  lg:py-3 lg:px-5 rounded-[100px] lg:hover:opacity-90 border-0  hover:navHover `}
               href="/about"
             >
               Learn More

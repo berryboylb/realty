@@ -7,7 +7,7 @@ export default function AboutHeader() {
     <section>
       <div>
         <div id="sticky" className="w-full lg:w-1/2 ">
-          <h3 className="text-[2rem] lg:text-[3.25rem]  font-medium leading-[1.25]  lg:mt-[3rem]">
+          <h3 className="text-[2rem] lg:text-[3.25rem]  font-medium leading-[1.25] mt-[2rem]  lg:mt-[3rem]">
             Our Team
           </h3>
           <p className="text-base  mt-10">

@@ -41,7 +41,7 @@ export default function NavBar(props: INavbrProps) {
         <ul
           className={
             mobileNav
-              ? "absolute right-0 top-[7vh] w-full  flex items-center justify-evenly flex-col z-[98] border-b border-[#c5c5c5]   ease-in duration-300 bg-white pt-11 pb-5"
+              ? "absolute right-0 top-0 pt-[5rem] lg:pt-0 w-full  flex items-center justify-evenly flex-col z-[98] border-b border-[#c5c5c5]   ease-in duration-300 bg-white pt-11 pb-5"
               : "lg:flex lg:items-center lg:capitalize hidden "
           }
         >
@@ -64,7 +64,7 @@ export default function NavBar(props: INavbrProps) {
         </ul>
         <ul className="flex  items-center">
           <li
-            className={` z-[99] lg:block lg:ml-5 text-sm  text-white font-normal bg-black py-3 px-5 rounded-[100px] lg:hover:opacity-90 border-0  hover:navHover `}
+            className={` z-[99] lg:block lg:ml-5 text-sm  text-white font-normal bg-black py-2 px-3  lg:py-3 lg:px-5 rounded-[100px] lg:hover:opacity-90 border-0  hover:navHover `}
           >
             <Link href="/contact" onClick={handleMobileNav}>
               Contact Us
