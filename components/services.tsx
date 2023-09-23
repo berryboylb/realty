@@ -19,16 +19,16 @@ export default function Services() {
           end: "bottom bottom",
           toggleActions: "restart complete reverse reset",
         },
-        y: -200,
+        y: -170,
         x: 0,
-        duration: 2,
+        duration: 4,
         ease: "power4.inOut",
         // width: "100vw",
         // marginLeft: "-2rem",
       });
   }, [isMobile]);
   return (
-    <section className="mt-[5rem]" id="services">
+    <section className="mt-[1rem] lg:mt-[5rem]" id="services">
       <div className="w-full lg:w-1/2">
         <h1 className="text-2xl lg:text-3xl text-prefferredBlack  font-medium leading-[1.5]">
           Comprehensive real estate services to help you buy, sell, and manage

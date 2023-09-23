@@ -31,19 +31,22 @@ export default function Footer() {
           toggleActions: "restart complete reverse reset",
         },
         duration: 2,
-        y:-50,
-        ease: "power4.inOut",
+        y:50,
+        ease: "bounce",
         // width: "100vw",
         // marginLeft: "-2rem",
       });
   }, [isMobile]);
   return (
-    <footer id="footer" className="mt-[5rem] container lg:mb-[1rem]">
+    <footer
+      id="footer"
+      className="mt-[1rem] lg:mt-[5rem] container lg:mb-[1rem]"
+    >
       <div
         id="inner"
         className=" bg-footerBg text-white rounded-[30px] p-[1rem] lg:p-[2rem] "
       >
-        <div className="grid grid-cols-1 lg:grid-cols-7 gap-[1rem]">
+        <div className="grid grid-cols-1 lg:grid-cols-7 gap-[1rem] lg:gap-[1.5rem]">
           <div className="col-span-7 lg:col-span-2">
             <div className="logo z-[999] ">
               <Link

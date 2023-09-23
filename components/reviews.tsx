@@ -26,7 +26,7 @@ export default function Reviews() {
       });
   }, [isMobile]);
   return (
-    <section id="review" className="mt-[5rem]">
+    <section id="review" className="mt-[1rem] lg:mt-[5rem]">
       <div className="flex justify-between flex-wrap w-full relative">
         <div id="sticky" className="w-full lg:w-1/2 ">
           <h3 className="text-[2rem] lg:text-[3.25rem]  font-medium leading-[1.25]  lg:mt-[3rem]">

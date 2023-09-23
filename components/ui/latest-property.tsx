@@ -2,6 +2,7 @@ import Link from "next/link";
 import { properties } from "@/lib";
 import Image from "next/image";
 import { Bed, Shower, Size, Plus } from "@/assets";
+import { nFormatter } from "@/lib";
 export default async function LatestProperty() {
   const filteredArray = properties.slice(0,5)
 
@@ -28,7 +29,9 @@ export default async function LatestProperty() {
               className="overflow-hidden block "
             >
               <div className="overflow-hidden p-5 rounded-[30px] bg-propBg h-[250px] lg:h-[300px] relative group transition duration-500">
-                <h4 className="text-base font-semibold">${item.amount}</h4>
+                <h4 className="text-base font-semibold">
+                  ${nFormatter(Number(item.amount), 3)}
+                </h4>
                 <p className="mt-2 text-sm text-propColor">{item.address}</p>
                 <div className="flex items-center mt-3">
                   <h5 className="flex items-center text-sm text-propColor">
@@ -56,12 +59,12 @@ export default async function LatestProperty() {
                     {item.space}
                   </h5>
                 </div>
-                <div className="absolute top-0 right-0 left-0 bottom-0 lg:group-hover:top-[70%] transition duration-5000">
+                <div className="absolute top-0 left-0 w-full h-full lg:group-hover:top-[70%]  transition-all duration-300 ease-in ">
                   {" "}
                   <Image
                     src={item.image}
                     alt={item.image.toString()}
-                    className="w-full h-full object-cover z-[3] transition duration-500"
+                    className="w-full h-full object-cover z-[3]"
                   />
                   <button className="z-[5] backdrop-blur-lg bg-opacity-30 bg-gray-200  absolute top-[5%] right-[5%] rounded-full p-3 transition duration-5000 group-hover:-rotate-45">
                     <Image

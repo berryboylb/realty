@@ -19,7 +19,7 @@ export default function AboutHeader() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[1rem] my-[2rem]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[1rem] lg:gap-[1.5rem] my-[2rem]">
           {team.map((item, i) => (
             <figure
               key={item.name}

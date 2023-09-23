@@ -4,7 +4,7 @@ import { contact } from "@/lib";
 export function ContactDetails() {
   return (
     <section className="mt-[5rem] ">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1rem]  w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1rem] lg:gap-[1.5rem]  w-full">
         {contact.map((item) => (
           <div key={item.name} className="bg-propBg rounded-[30px] px-10 py-5">
             <div className="flex items-center">
@@ -72,10 +72,12 @@ export function ContactForm({
   form?: boolean;
 }) {
   return (
-    <section className="mt-[1rem]">
+    <section className="mt-[1rem] lg:mt-[1.5rem]">
       <div
         className={` w-full  ${
-          form ? "grid grid-cols-1 lg:grid-cols-2 gap-[1rem]  " : ""
+          form
+            ? "grid grid-cols-1 lg:grid-cols-2 gap-[1rem] lg:gap-[1.5rem]  "
+            : ""
         }`}
       >
         <div className="w-full  bg-propBg rounded-[30px] p-[1.5rem] lg:p-[2rem] ">
@@ -83,14 +85,14 @@ export function ContactForm({
             className={` ${
               form
                 ? "text-[2rem] lg:text-[2.5rem]  font-medium mt-0  lg:mt-[1.5rem] lg:mb-[1.5rem] "
-                : "text-center text-lg lg:text-2xl font-semibold lg:mb-[1.5rem]"
+                : "text-center text-lg lg:text-2xl font-semibold mb-[1rem] lg:mb-[1.5rem]"
             }`}
           >
             {title}
           </h1>
           <Form />
         </div>
-        {/* {form && (
+        {form && (
           <div className="w-full  h-[250px] lg:h-[37.5rem] object-cover max-w-full">
             <Image
               src={Space}
@@ -98,7 +100,7 @@ export function ContactForm({
               className="w-full h-full object-cover rounded-[30px]  "
             />
           </div>
-        )} */}
+        )}
       </div>
     </section>
   );

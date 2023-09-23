@@ -16,7 +16,7 @@ export default function Blog() {
           View All
         </Link>
       </div>
-      <div className=" mt-[1rem] lg:mt-10 grid grid-cols-1 lg:grid-cols-6 gap-[1rem] ">
+      <div className=" mt-[1rem] lg:mt-10 grid grid-cols-1 lg:grid-cols-6 gap-[1rem] lg:gap-[1.5rem] ">
         <Link
           href={`/blog/${blogPosts[0].title}`}
           className="col-span-6 lg:col-span-3 group "
@@ -28,10 +28,10 @@ export default function Blog() {
               className="w-full h-full object-cover rounded-[30px] group-hover:scale-150 transition duration-300  "
             />
           </div>
-          <h3 className="text-base lg:text-2xl text-prefferredBlack  font-semibold  lg:font-medium leading-[1.5] mt-2">
+          <h3 className="text-base lg:text-2xl text-prefferredBlack  font-semibold  lg:font-medium leading-[1.5] mt-2 lg:mt-5">
             {blogPosts[0].title}
           </h3>
-          <p className="mt-2 text-propColor text-base">
+          <p className="mt-2 text-propColor text-sm  lg:text-base">
             {blogPosts[0].description}
           </p>
         </Link>
@@ -40,7 +40,7 @@ export default function Blog() {
             <Link
               key={i}
               href={`/blog/${item.title}`}
-              className="col-span-6 lg:col-span-3  flex flex-wrap  mb-[1rem] group "
+              className="col-span-6 lg:col-span-3  flex flex-wrap lg:flex-nowrap  mb-[1rem] lg:mb-[1.5rem] group "
             >
               <div className="lg:h-[150px] lg:w-[200px] w-full h-[250px] overflow-hidden rounded-[30px]">
                 <Image
@@ -49,11 +49,11 @@ export default function Blog() {
                   className="w-full h-full object-cover rounded-[30px] group-hover:scale-150 transition duration-300 "
                 />
               </div>
-              <div className="w-full lg:w-[63.8%] lg:ml-5 ">
-                <h3 className="text-base lg:text-xl text-prefferredBlack font-semibold  lg:font-medium  leading-[1.5] mt-2">
+              <div className="w-full lg:w-[calc(100%-200px)] lg:ml-5 ">
+                <h3 className="text-base lg:text-xl text-prefferredBlack font-semibold  lg:font-medium  leading-[1.5] mt-4 lg:mt-2">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-propColor text-base">
+                <p className="mt-2 text-propColor text-sm  lg:text-base">
                   {item.description}
                 </p>
               </div>
@@ -67,20 +67,20 @@ export default function Blog() {
 
 export function Dreams() {
   return (
-    <section className="mt-[5rem]">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-[1rem]  w-full">
+    <section className="mt-[1rem] lg:mt-[5rem]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-[1rem] lg:gap-[1.5rem]  w-full">
         <div className="w-full  bg-propBg rounded-[30px] p-[1.5rem] lg:p-[2rem]">
-          <h1 className="text-[2rem] lg:text-[3.25rem]  font-medium leading-[1.25]  lg:mt-[3rem]">
+          <h1 className="text-[1.5rem] lg:text-[2.5rem]  font-medium leading-[1.25]  lg:mt-[3rem]">
             Take the First Step Towards Your Dream Home Today!
           </h1>
-          <p className="text-base  mt-10">
+          <p className="text-base  mt-10 lg:mt-[5rem]">
             At Realty, we are committed to providing exceptional service to all
             of our clients. Whether you &apos;re looking to buy, sell, or invest
             in real estate, our team of expert agents is here to help. Contact
             us today to discuss your real estate goals and find out how we can
             assist you every step of the way.
           </p>
-          <div className="flex items-start justify-start mt-10">
+          <div className="flex items-start justify-start mt-10 lg:mt-[5rem]">
             {" "}
             <Link
               className={` lg:block  text-sm  text-white font-normal bg-black py-2 px-3  lg:py-3 lg:px-5 rounded-[100px] lg:hover:opacity-90  hover:bg-navHover border-0  hover:navHover `}

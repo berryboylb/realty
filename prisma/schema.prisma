@@ -6,6 +6,119 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
+}
+
+
+enum UserRole {
+  USER
+  ADMIN
+}
+
+model Contact {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  email     String?  @unique
+  fullname  String
+  phone     String   @unique
+  message   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deletedAt Boolean  @default(false)
+}
+
+model Subscribe {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  email     String?  @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deletedAt Boolean  @default(false)
+}
+
+model BlogPost {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  title       String
+  description String
+  image       String
+  tags        String[]
+  content     String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  deletedAt   Boolean  @default(false)
+}
+
+model Property {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  name        String
+  amount      String
+  address     String
+  bedrooms    String
+  bathrooms   String
+  images      String[]
+  space       String
+  description String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  deletedAt   Boolean  @default(false)
+}
+
+model Services {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  title       String
+  description String
+  image       String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  deletedAt   Boolean  @default(false)
+}
+
+model Reviews {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  fullName    String   @unique
+  description String
+  image       String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  deletedAt   Boolean  @default(false)
+}
+
+model CompanyContact {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  name      String   @unique
+  value     String
+  image     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deletedAt Boolean  @default(false)
+}
+
+model Team {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  fullName      String   @unique
+  position      String   @unique
+  image         String
+  instagramLink String
+  twitterLink   String
+  facebookLink  String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  deletedAt     Boolean  @default(false)
+}
+
+model User {
+  id                String   @id @default(auto()) @map("_id") @db.ObjectId
+  firstname         String
+  lastname          String
+  username          String   @unique
+  email             String   @unique
+  phone             String   @unique
+  picture           String
+  role              UserRole
+  isVerified        Boolean  @default(false)
+  loginToken        String
+  loginTokenExpires DateTime
+  password          String
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  deletedAt         Boolean  @default(false)
 }

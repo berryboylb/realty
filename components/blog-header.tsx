@@ -28,7 +28,7 @@ export function BlogHeader() {
           ))}
         </div>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[1rem] mt-10 ">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[1rem] lg:gap-[1.5rem] mt-10 ">
         {blogPosts.map((item, i) => (
           <Link key={i} href={`/blog/${item.title}`} className="block ">
             <div className="group lg:h-[250px]  w-full h-[250px] overflow-hidden rounded-[30px]">

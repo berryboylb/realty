@@ -26,7 +26,7 @@ export default function Hero() {
           </p>
         </div>
       </div>
-      <div className=" mt-[1rem] lg:mt-10 grid grid-cols-1 lg:grid-cols-6 gap-[1rem] ">
+      <div className=" mt-[1rem] lg:mt-10 grid grid-cols-1 lg:grid-cols-6 gap-[1rem] lg:gap-[1.5rem] ">
         <Link
           href={``}
           className="block relative col-span-6 lg:col-span-3  h-[250px] lg:h-[650px] rounded-[30px] group"
@@ -69,13 +69,13 @@ export default function Hero() {
             </div>
           </div>
         </Link>
-        <div className="col-span-6 lg:col-span-3  grid grid-flow-row lg:grid-rows-6 gap-[1rem] ">
+        <div className="col-span-6 lg:col-span-3  grid grid-flow-row lg:grid-rows-6 gap-[1rem] lg:gap-[1.5rem] ">
           <div className="row-span-3 rounded-[30px] w-full overflow-hidden ">
             <Slider images={Sliderimages} />
 
             {/* <h1>Carousel</h1> */}
           </div>
-          <div className="row-span-3  rounded-[30px] grid grid-cols-1 lg:grid-cols-6 gap-[1rem]">
+          <div className="row-span-3  rounded-[30px] grid grid-cols-1 lg:grid-cols-6 gap-[1rem] lg:gap-[1.5rem]">
             <div
               onClick={handleVideoToggle}
               role="button"

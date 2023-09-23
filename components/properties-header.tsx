@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Bed, Shower, Size, Plus } from "@/assets";
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
+import { nFormatter } from "@/lib";
 
 const location = ["miami", "aspen", "malibu", "new york"];
 export function PropertiesHeader() {
@@ -152,7 +153,7 @@ export function PropertiesHeader() {
             </div>
           </div>
         )}
-        <div className="lg:col-span-6  grid gap-[1rem] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-prefferredBlack ">
+        <div className="lg:col-span-6  grid gap-[1rem] lg:gap-[1.5rem] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-prefferredBlack ">
           {properties.map((item, i) => (
             <Link
               key={i}
@@ -160,7 +161,9 @@ export function PropertiesHeader() {
               href={`/properties/${item.name}`}
             >
               <div className="overflow-hidden p-5 rounded-[30px] bg-propBg h-[250px] lg:h-[250px] relative group transition duration-500">
-                <h4 className="text-base font-semibold">${item.amount}</h4>
+                <h4 className="text-base font-semibold">
+                  ${nFormatter(Number(item.amount), 3)}
+                </h4>
                 <p className="mt-2 text-sm text-propColor">{item.address}</p>
                 <div className="flex items-center mt-3">
                   <h5 className="flex items-center text-sm text-propColor">
@@ -188,12 +191,12 @@ export function PropertiesHeader() {
                     {item.space}
                   </h5>
                 </div>
-                <div className="absolute top-0 right-0 left-0 bottom-0 lg:group-hover:top-[70%] transition duration-5000">
+                <div className="absolute top-0 left-0 w-full h-full lg:group-hover:top-[70%]  transition-all duration-300 ease-in ">
                   {" "}
                   <Image
                     src={item.image}
                     alt={item.image.toString()}
-                    className="w-full h-full object-cover z-[3] transition duration-500"
+                    className="w-full h-full object-cover z-[3] "
                   />
                   <button className="z-[5] backdrop-blur-lg bg-opacity-30 bg-gray-200  absolute top-[5%] right-[5%] rounded-full p-3 transition duration-5000 group-hover:-rotate-45">
                     <Image

@@ -28,13 +28,13 @@ const Gallery = ({
         />
         <button
           onClick={handleVideoToggle}
-          className="absolute z-20 bottom-[1.5rem] right-[1.5rem] text-sm bg-white text-prefferredBlack capitalize rounded-[50px] px-5 py-3  w-auto flex items-center hover:scale-105 transition duration-300"
+          className="absolute z-20 bottom-[1rem] right-[1rem] lg:bottom-[1.5rem] lg:right-[1.5rem] text-xs lg:text-sm bg-white text-prefferredBlack capitalize rounded-[50px] px-5 py-3  w-auto flex items-center hover:scale-105 transition duration-300"
         >
           {" "}
           <Image
             src={Gala}
             alt="land scape"
-            className="w-[20px] h-[20px] object-contain mr-3 text-white text-3xl"
+            className="w-[15px] lg:w-[20px] h-[15px] lg:h-[20px] object-contain mr-3 text-white text-3xl"
             priority={true}
           />
           See All Gallery
