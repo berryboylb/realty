@@ -6,6 +6,7 @@ import { Toaster } from "react-hot-toast";
 import { Analytics } from "@/components/analytics";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
+
 const plus_jakarta_sans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

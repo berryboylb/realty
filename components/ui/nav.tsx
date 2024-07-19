@@ -9,7 +9,7 @@ export function NavHeader() {
   const pathSegments = pathname.split("/").filter((segment) => segment !== "");
 
   return (
-    <div className="mt-6 flex flex-wrap items-center py-3  ]">
+    <div className="mt-6 flex flex-wrap items-center py-3 ">
       <button
         className="text-prefferredBlack cursor-pointer text-sm"
         onClick={() => router.push("/")}
